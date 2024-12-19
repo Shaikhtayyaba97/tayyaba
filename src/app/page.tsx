@@ -25,8 +25,8 @@ export default function Home() {
             Discover the perfect blend of quality, style, and comfort at{" "}
             <i>A TO Z</i>. Explore our latest collection of products, e.g.,
             Make-up, Perfumes, Body Spray, Toys, and Accessories, crafted to
-            suit every taste and occasion. Whether you're looking for timeless
-            classics or modern essentials, we've got you covered. Shop now and
+            suit every taste and occasion. Whether you are looking for timeless
+            classics or modern essentials, we have got you covered. Shop now and
             experience elegance, durability, and affordability. All in one
             place.
           </p>
