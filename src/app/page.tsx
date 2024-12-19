@@ -27,7 +27,7 @@ export default function Home() {
             Make-up, Perfumes, Body Spray, Toys, and Accessories, crafted to
             suit every taste and occasion. Whether you're looking for timeless
             classics or modern essentials, we've got you covered. Shop now and
-            experience elegance, durability, and affordability — all in one
+            experience elegance, durability, and affordability. All in one
             place.
           </p>
           <Button className="mt-6 bg-purple-700 text-white hover:bg-purple-600">
@@ -56,13 +56,13 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734461259/5_ctwv7r.jpg"
-            alt="Make-Up"
+            alt="MakeUp"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
           />
           <p className="mt-4 text-lg font-semibold flex items-center">
-            Make-Up Varieties <MdSmartToy className="ml-2" />
+            MakeUp Varieties <MdSmartToy className="ml-2" />
           </p>
         </div>
 
