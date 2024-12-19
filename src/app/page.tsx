@@ -48,7 +48,7 @@ export default function Home() {
             height={300}
           />
           <p className="mt-4 text-lg font-semibold flex items-center">
-            Toy's Varieties <MdSmartToy className="ml-2" />
+            Toys Varieties <MdSmartToy className="ml-2" />
           </p>
         </div>
 
