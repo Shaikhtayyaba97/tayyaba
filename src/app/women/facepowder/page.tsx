@@ -14,7 +14,7 @@ const page = () => {
         <Link href={`/women/facepowder/${data.id}`}>   <Image src={data.img || './img' } alt='img' height={100} width={100}/></Link>
         {data.description} <br />
         {data.price} <br />
-        <button className='bg-purple-200 text-purple-950'>Add to card</button>                </div>
+        <button className='bg-purple-200 text-purple-950'>Add to cart</button>                </div>
             )
         })
 
