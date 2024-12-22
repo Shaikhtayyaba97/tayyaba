@@ -1,12 +1,12 @@
 import React from 'react'
-import { Facepowderndata } from '../../../../Data/data'
+import { Facepowderdata } from '../../../../Data/data'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const page = () => {
   return (
     <div className='flex justify-evenly m-4'>
-        {Facepowderndata.map((data)=>{
+        {Facepowderdata.map((data)=>{
             return(
 
 

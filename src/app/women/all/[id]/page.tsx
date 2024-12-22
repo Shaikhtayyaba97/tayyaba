@@ -1,4 +1,4 @@
-import { Lipstickdata } from "../../../../../Data/data"
+import {Lipstickdata } from "../../../../../Data/data";
 import Image from "next/image"
 interface Paramsin {
     params: {
@@ -6,8 +6,9 @@ interface Paramsin {
     }
 }
 const page = ({params} : Paramsin) => {
-    const tonum = Number(params.id)
-    const filter = Lipstickdata.find((items) => items.id === tonum)
+    const tonum = Number(params.id);
+    const filter = Lipstickdata.find((items) => items.id === tonum);
+    
 
   return (
     <div className=" text-purple-600 flex flex-col justify-center items-center m-4 gap-3">

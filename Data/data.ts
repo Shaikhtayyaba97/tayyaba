@@ -47,7 +47,7 @@ export const Foundationdata=[
 }
 
 ]
-export const Facepowderndata=[
+export const Facepowderdata=[
     {id: 1,
         img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699273/WhatsApp_Image_2024-12-20_at_17.43.25_03622824_mdbeda.jpg',
        title:'Huda-Beauty',
@@ -56,7 +56,7 @@ export const Facepowderndata=[
       
    },
    {id: 2,
-    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699076/WhatsApp_Image_2024-12-20_at_17.43.29_309eb012_nabuqd.jpg',
+    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699270/WhatsApp_Image_2024-12-20_at_17.43.26_36695bed_ldt6io.jpg',
    title:'Fit-me mate Foundation',
    description: ' Fit-me mate Foundation',
    price: 2200,
