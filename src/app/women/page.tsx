@@ -10,7 +10,7 @@ export default function Women() {
       {/* First Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4">
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="women/all" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734548455/WhatsApp_Image_2024-12-18_at_23.59.55_46cf036f_jcqhwk.jpg"
               alt="Lipsticks"
@@ -36,7 +36,7 @@ export default function Women() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="women/foundation" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734548506/WhatsApp_Image_2024-12-18_at_23.59.56_cf348eb9_inohfp.jpg"
               alt="Foundations"
@@ -49,10 +49,10 @@ export default function Women() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="women/facepowder" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734548468/WhatsApp_Image_2024-12-18_at_23.59.55_2aa86d2c_jdfrrx.jpg"
-              alt="Face Powder"
+              alt="women/facepowder"
               className="rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
               height={200}
               width={400}
