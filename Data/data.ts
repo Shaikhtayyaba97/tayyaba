@@ -57,15 +57,15 @@ export const Facepowderdata=[
    },
    {id: 2,
     img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699270/WhatsApp_Image_2024-12-20_at_17.43.26_36695bed_ldt6io.jpg',
-   title:'Fit-me mate Foundation',
-   description: ' Fit-me mate Foundation',
+   title:'Fit-me facepowder',
+   description: ' Fit-me mate Facepowder',
    price: 2200,
   
 },
 {id: 3,
-    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699080/WhatsApp_Image_2024-12-20_at_17.43.29_0027e932_ruglhm.jpg',
-   title:'Ideal-stay Foundation',
-   description: ' Ideal-stay Foundation',
+    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699272/WhatsApp_Image_2024-12-20_at_17.43.25_10ac679c_f6l1rc.jpg',
+   title:'Miss Rose Facepowder',
+   description: 'Miss Rose',
    price: 1500,
   
 }
