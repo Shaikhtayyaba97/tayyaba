@@ -10,7 +10,7 @@ const page = () => {
             return(
 
 
-                <div className='text-amber-700'>
+                <div key={data.id} className='text-amber-700'>
         <Link href={`/women/all/${data.id}`}>   <Image src={data.img || './img' } alt='img' height={100} width={100}/></Link>
         {data.description} <br />
         {data.price} <br />
