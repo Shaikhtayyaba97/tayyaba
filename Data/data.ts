@@ -69,5 +69,30 @@ export const Facepowderdata=[
    price: 1500,
   
 }
+]
+
+export const Ringdata=[
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699075/WhatsApp_Image_2024-12-20_at_17.43.30_eeed82a2_teoe0h.jpg',
+       title:'Stain-less Ring',
+       description: 'Stainless Ring',
+       price: 350,
+      
+   },
+   {id: 2,
+    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699074/WhatsApp_Image_2024-12-20_at_17.43.30_6d30b4ab_nxsxsw.jpg',
+   title:'Original Zarqoon Ring',
+   description: ' Original Zarqoon Ring',
+   price: 550,
+  
+},
+{id: 3,
+    img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699066/WhatsApp_Image_2024-12-20_at_17.43.30_5917c535_lqbz7x.jpg',
+   title:'Original Zarqoon Ring',
+   description: 'Original Zarqoon Ring',
+   price: 600,
+  
+}
 
 ]
+

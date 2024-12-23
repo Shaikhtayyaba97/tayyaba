@@ -107,7 +107,7 @@ export default function Women() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="women/ring" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734591195/WhatsApp_Image_2024-12-19_at_11.48.47_423e05e9_yqkowq.jpg"
               alt="Rings"

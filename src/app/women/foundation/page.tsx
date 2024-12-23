@@ -1,26 +1,45 @@
-import React from 'react'
-import { Foundationdata } from '../../../../Data/data'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react";
+import { Foundationdata } from "../../../../Data/data";
+import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
-    <div className='flex justify-evenly m-4'>
-        {Foundationdata.map((data)=>{
-            return(
+    <div className="flex flex-wrap justify-center gap-6 m-4">
+      {Foundationdata.map((data) => {
+        return (
+          <div
+            key={data.id}
+            className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
+          >
+            {/* Product Image */}
+            <Link href={`/women/foundation/${data.id}`}>
+              <Image
+                src={data.img || "./img"}
+                alt="img"
+                height={200}
+                width={200}
+                className="object-cover rounded-md"
+              />
+            </Link>
 
+            {/* Product Description */}
+            <p className="text-center mt-2 text-sm sm:text-base font-medium">
+              {data.description}
+            </p>
 
-                <div key={data.id} className='text-amber-700'>
-        <Link href={`/women/foundation/${data.id}`}>   <Image src={data.img || './img' } alt='img' height={100} width={100}/></Link>
-        {data.description} <br />
-        {data.price} <br />
-        <button className='bg-purple-200 text-purple-950'>Add to card</button>                </div>
-            )
-        })
+            {/* Product Price */}
+            <p className="text-center text-lg font-bold mt-1">{data.price}</p>
 
-        }
+            {/* Add to Cart Button */}
+            <button className="bg-purple-200 text-purple-950 w-full py-2 mt-4 rounded hover:bg-purple-300 transition-all">
+              Add to cart
+            </button>
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
