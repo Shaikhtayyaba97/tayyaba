@@ -1,19 +1,19 @@
 import React from "react";
-import { Ringdata } from "../../../../Data/data";
+import { BraceletData } from "../../../../Data/data";
 import Image from "next/image";
 import Link from "next/link";
 
 const page = () => {
   return (
     <div className="flex flex-wrap justify-center gap-6 m-4">
-      {Ringdata.map((data) => {
+      {BraceletData.map((data) => {
         return (
           <div
             key={data.id}
             className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
           >
             {/* Product Image */}
-            <Link href={`/women/ring/${data.id}`}>
+            <Link href={`/men/braclet/${data.id}`}>
               <Image
                 src={data.img || "./img"}
                 alt="img"

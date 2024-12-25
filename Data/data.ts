@@ -95,4 +95,50 @@ export const Ringdata=[
 }
 
 ]
+export const BraceletData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699366/WhatsApp_Image_2024-12-20_at_17.43.17_2d69d9f7_h1zkub.jpg',
+        title:'Men stailess Bracelet',
+        description:'Stailess Men Bracelet',
+        price: 2600,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699363/WhatsApp_Image_2024-12-20_at_17.43.18_47bbc715_lveczc.jpg',
+        title:'Men stailess Bracelet',
+        description:'Stailess Men Bracelet',
+        price: 2800,
+    },
+    
+]
+export const WatchData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699332/WhatsApp_Image_2024-12-20_at_17.43.19_ae142a39_du1mzi.jpg',
+        title:'Men Watch',
+        description:'Men Watch',
+        price: 2000,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699333/WhatsApp_Image_2024-12-20_at_17.43.18_51df5ee0_lgiqjy.jpg',
+        title:'Men Watch',
+        description:'Men Watch',
+        price: 2000,
+    },
+    
+]
+export const RingData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699327/WhatsApp_Image_2024-12-20_at_17.43.21_30b121c3_vhvhkf.jpg',
+        title:'Men Ring',
+        description:'Stainless Rolex Men Ring',
+        price: 1500,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699331/WhatsApp_Image_2024-12-20_at_17.43.20_2acc556b_vud0ed.jpg',
+        title:'Stainless ring',
+        description:'Stainless ring',
+        price: 1500,
+    },
+    
+]
+
 

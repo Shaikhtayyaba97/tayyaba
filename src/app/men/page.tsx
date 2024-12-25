@@ -10,7 +10,7 @@ export default function Men() {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {/* Bracelets */}
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="/men/braclet" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734592453/WhatsApp_Image_2024-12-19_at_12.09.39_664b7999_ylmi8k.jpg"
               alt="Bracelets"
@@ -24,7 +24,7 @@ export default function Men() {
 
         {/* Watches */}
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="/men/watch" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586598/WhatsApp_Image_2024-12-19_at_10.33.33_1e003ff9_aejphu.jpg"
               alt="Watches"
@@ -38,7 +38,7 @@ export default function Men() {
 
         {/* Rings */}
         <div className="flex flex-col items-center">
-          <Link href="/lipstick" className="text-center">
+          <Link href="/men/ring" className="text-center">
             <Image
               src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734592460/WhatsApp_Image_2024-12-19_at_12.10.14_3e33cd68_zsrqtr.jpg"
               alt="Rings"
