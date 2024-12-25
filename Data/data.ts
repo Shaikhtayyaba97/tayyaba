@@ -140,5 +140,62 @@ export const RingData=[
     },
     
 ]
+export const ToyData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699276/WhatsApp_Image_2024-12-20_at_17.43.24_f1791e77_r62avz.jpg',
+        title:'Fruite set',
+        description:'Fruite set',
+        price: 300,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699275/WhatsApp_Image_2024-12-20_at_17.43.25_9e4cee21_p1ertf.jpg',
+        title:'Kitchen Set',
+        description:'Kitchen Set',
+        price: 600,
+    },
+    
+]
+export const JewData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699279/WhatsApp_Image_2024-12-20_at_17.43.23_cfa6bd43_lup0qz.jpg',
+        title:'Heart Shape Tops Box',
+        description:'Heart Shape Tops Box',
+        price: 700,
+    },
+    
+    
+]
+export const CufflinkData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699367/WhatsApp_Image_2024-12-20_at_17.43.16_cdb8ecd8_stwh3k.jpg',
+        title:'Stainless Men Cufflinks',
+        description:'Stainless Men Cufflinks',
+        price: 400,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699368/WhatsApp_Image_2024-12-20_at_17.43.15_a0a2196b_zm18yj.jpg',
+        title:'Stainless Men Cufflinks',
+        description:'Stainless Men Cufflinks',
+        price: 400,
+    },
+    
+    
+]
+export const ChainData=[
+    {id: 0,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699324/WhatsApp_Image_2024-12-20_at_17.43.22_2383341b_teeudv.jpg',
+        title:'Stainless Men Chain',
+        description:'Stainless Men Chain',
+        price: 1500,
+    },
+    {id: 1,
+        img: 'https://res.cloudinary.com/dgsdbvs53/image/upload/v1734699325/WhatsApp_Image_2024-12-20_at_17.43.21_1b8bf282_wong2n.jpg',
+        title:'Stainless Men Chain',
+        description:'Stainless Men Chain',
+        price: 1500,
+    },
+    
+    
+]
 
 

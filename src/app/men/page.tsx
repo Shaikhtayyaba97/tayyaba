@@ -54,7 +54,7 @@ export default function Men() {
       {/* New Arrival Section */}
       <div className="mt-16 flex flex-col items-center bg-orange-100 py-8">
         <h1 className="text-4xl font-bold text-center text-orange-500 mb-10 ">New Arrival</h1>
-        <Link href="/lipstick" className="text-center">
+        <Link href="/men/cufflink" className="text-center">
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734592447/WhatsApp_Image_2024-12-19_at_12.09.01_76fa7626_gv9oza.jpg"
             alt="New Arrival"
@@ -64,7 +64,7 @@ export default function Men() {
           />
         <h1 className="text-2xl text-purple-600 mb-10 mt-5"> Cufflinks</h1> 
         </Link> <br />
-        <Link href="/lipstick" className="text-center">
+        <Link href="/men/chain" className="text-center">
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734618967/WhatsApp_Image_2024-12-19_at_19.14.28_83842389_yaaea2.jpg"
             alt="New Arrival"

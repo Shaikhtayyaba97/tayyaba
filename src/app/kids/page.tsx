@@ -18,7 +18,7 @@ export default function Kids(){
             </div>
             <div className="text-center mt-5 mb-5">
             
-                <Link href="/newborn">
+                <Link href="/kids/toy">
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734618962/WhatsApp_Image_2024-12-19_at_19.27.43_9ddd4153_zv4cho.jpg"
             alt="New Arrival"
@@ -31,7 +31,7 @@ export default function Kids(){
             </div>
             <div className="text-center mt-5 mb-5">
             
-                <Link href="/newborn">
+                <Link href="/kids/jewelry">
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734618955/WhatsApp_Image_2024-12-19_at_19.29.23_3d6f62e0_ijcmsp.jpg"
             alt="New Arrival"
