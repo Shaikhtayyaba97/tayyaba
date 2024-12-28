@@ -33,9 +33,18 @@ const page = ({ params }: Paramsin) => {
       </h1>
 
       {/* Add to Cart Button */}
-      <button className="bg-purple-200 text-purple-950 py-2 px-6 rounded hover:bg-purple-300 transition-all">
-        Add to cart
+      <div className="flex items-center gap-4">
+      <button className="px-3 py-2 bg-gray-200 rounded hover:bg-gray-300">
+        -
       </button>
+      <button className="px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-600">
+        Add to Cart
+      </button>
+      <button className="px-3 py-2 bg-gray-200 rounded hover:bg-gray-300">
+        +
+      </button>
+    </div>
+
     </div>
   );
 };

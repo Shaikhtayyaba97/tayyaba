@@ -2,6 +2,7 @@ import React from "react";
 import { Lipstickdata } from "../../../../Data/data";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
 
 const page = () => {
   return (
@@ -32,9 +33,10 @@ const page = () => {
             <p className="text-center text-lg font-bold mt-1">{data.price}</p>
 
             {/* Add to Cart Button */}
-            <button className="bg-purple-200 text-purple-950 w-full py-2 mt-4 rounded hover:bg-purple-300 transition-all">
-              Add to cart
-            </button>
+            <div className="flex items-center gap-4">
+     <Button/>
+    </div>
+
           </div>
         );
       })}

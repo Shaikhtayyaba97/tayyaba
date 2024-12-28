@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { FaShoppingCart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
+
+import CartIcon from "./CardIcon";
+
 
 export default function Header() {
   return (
@@ -26,10 +27,8 @@ export default function Header() {
         </nav>
 
         {/* Icons */}
-        <div className="flex gap-4 text-purple-700">
-          <FaShoppingCart size={30} className="hover:text-purple-900 cursor-pointer" />
-          <FaHeart size={30} className="hover:text-purple-900 cursor-pointer" />
-        </div>
+        
+        <CartIcon/>
       </div>
 
       {/* Mobile Menu */}

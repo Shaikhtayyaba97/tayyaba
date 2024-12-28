@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import { Foundationdata } from "../../../../../Data/data";
 import Image from "next/image";
 
@@ -33,9 +34,8 @@ const page = ({ params }: Paramsin) => {
       </h1>
 
       {/* Add to Cart Button */}
-      <button className="bg-purple-200 text-purple-950 py-2 px-6 rounded hover:bg-purple-300 transition-all">
-        Add to cart
-      </button>
+      <Button
+      productId={filter?.id}/>
     </div>
   );
 };
