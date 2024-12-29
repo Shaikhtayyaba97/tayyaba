@@ -1,6 +1,5 @@
-
 import Button from "@/components/Button";
-import { BraceletData } from "../../../../../Data/data";  // Assuming your data is here
+import { BraceletData } from "../../../../../Data/data"; // Assuming your data is here
 import Image from "next/image";
 
 interface Paramsin {
@@ -15,35 +14,39 @@ const page = ({ params }: Paramsin) => {
 
   // Ensure filter is defined before rendering
   if (!filter) {
-    return <div>Product not found</div>;  // Handle case when the product is not found
+    return (
+      <div className="text-center text-red-600 font-semibold mt-10">
+        Product not found
+      </div>
+    ); // Handle case when the product is not found
   }
 
   return (
-    <div className="text-purple-600 flex flex-col justify-center items-center m-4 gap-4 p-4 border rounded-md shadow-md max-w-[90%] sm:max-w-[400px] mx-auto">
+    <div className="flex flex-col justify-center items-center m-4 gap-6 p-6 bg-white border border-gray-200 rounded-md shadow-md max-w-[95%] sm:max-w-[450px] mx-auto">
       {/* Product Image */}
       <Image
-        src={filter.img || "./img"}  // Ensure the fallback image path is valid
-        alt="img"
-        height={200}
-        width={200}
-        className="object-cover rounded-md"
+        src={filter.img || "/fallback-image.png"} // Ensure the fallback image path is valid
+        alt="Product Image"
+        height={250}
+        width={250}
+        className="object-cover rounded-lg"
       />
 
       {/* Product Title */}
-      <p className="text-center text-lg sm:text-xl font-semibold">
+      <p className="text-center text-lg sm:text-xl font-semibold text-gray-800">
         {filter.title}
       </p>
 
       {/* Product Price */}
-      <h1 className="text-center text-xl sm:text-2xl font-bold">
-        ${filter.price}  {/* Assuming price is a number, you can format it to show as currency */}
+      <h1 className="text-center text-2xl sm:text-3xl font-bold text-purple-600">
+        ${filter.price.toFixed(2)} {/* Format price to two decimal places */}
       </h1>
 
       {/* Add to Cart Button */}
       <Button
-        productId={filter.id}  // Use filter instead of data
-        productName={filter.title}  // Use filter.title for product name
-        productPrice={filter.price}  // Use filter.price for product price
+        productId={filter.id}
+        productName={filter.title}
+        productPrice={filter.price}
       />
     </div>
   );
