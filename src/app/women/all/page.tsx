@@ -15,7 +15,7 @@ const page = () => {
             className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
           >
             {/* Product Image */}
-            <Link href={`/women/ring/${data.id}`}>
+            <Link href={`/women/all/${data.id}`}>
               <Image
                 src={data.img || "./img"}
                 alt="img"
