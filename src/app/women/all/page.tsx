@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+
 const page = () => {
   return (
     <div className="flex flex-wrap justify-center gap-6 m-4">
@@ -14,7 +15,7 @@ const page = () => {
             className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
           >
             {/* Product Image */}
-            <Link href={`/women/all/${data.id}`}>
+            <Link href={`/women/ring/${data.id}`}>
               <Image
                 src={data.img || "./img"}
                 alt="img"
@@ -33,10 +34,11 @@ const page = () => {
             <p className="text-center text-lg font-bold mt-1">{data.price}</p>
 
             {/* Add to Cart Button */}
-            <div className="flex items-center gap-4">
-     <Button/>
-    </div>
-
+            <Button
+            productId={data.id}
+            productName={data.title}
+            productPrice={data.price}
+            />
           </div>
         );
       })}
