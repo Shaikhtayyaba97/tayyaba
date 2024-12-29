@@ -2,6 +2,8 @@ import React from "react";
 import { WatchData } from "../../../../Data/data";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
+
 
 const page = () => {
   return (
@@ -32,18 +34,11 @@ const page = () => {
             <p className="text-center text-lg font-bold mt-1">{data.price}</p>
 
             {/* Add to Cart Button */}
-            <div className="flex items-center gap-4">
-      <button className="px-3 py-2 bg-gray-200 rounded hover:bg-gray-300">
-        -
-      </button>
-      <button className="px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-600">
-        Add to Cart
-      </button>
-      <button className="px-3 py-2 bg-gray-200 rounded hover:bg-gray-300">
-        +
-      </button>
-    </div>
-
+            <Button
+            productId={data.id}
+            productName={data.title}
+            productPrice={data.price}
+            />
           </div>
         );
       })}

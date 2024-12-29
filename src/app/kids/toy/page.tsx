@@ -1,43 +1,50 @@
-import React from "react";
-import { ToyData } from "../../../../Data/data";
+
+import Button from "@/components/Button";
+import { ToyData } from "../../../../Data/data"; // Assuming your data is here
 import Image from "next/image";
-import Link from "next/link";
 
-const page = () => {
+interface Paramsin {
+  params: {
+    id: string;
+  };
+}
+
+const page = ({ params }: Paramsin) => {
+  const tonum = Number(params.id);
+  const filter = ToyData.find((items) => items.id === tonum);
+
+  // Ensure filter is defined before rendering
+  if (!filter) {
+    return <div>Product not found</div>;  // Handle case when the product is not found
+  }
+
   return (
-    <div className="flex flex-wrap justify-center gap-6 m-4">
-      {ToyData.map((data) => {
-        return (
-          <div
-            key={data.id}
-            className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
-          >
-            {/* Product Image */}
-            <Link href={`/kids/toy/${data.id}`}>
-              <Image
-                src={data.img || "./img"}
-                alt="img"
-                height={200}
-                width={200}
-                className="object-cover rounded-md"
-              />
-            </Link>
+    <div className="text-purple-600 flex flex-col justify-center items-center m-4 gap-4 p-4 border rounded-md shadow-md max-w-[90%] sm:max-w-[400px] mx-auto">
+      {/* Product Image */}
+      <Image
+        src={filter.img || "./img"}  // Ensure the fallback image path is valid
+        alt="img"
+        height={200}
+        width={200}
+        className="object-cover rounded-md"
+      />
 
-            {/* Product Description */}
-            <p className="text-center mt-2 text-sm sm:text-base font-medium">
-              {data.description}
-            </p>
+      {/* Product Title */}
+      <p className="text-center text-lg sm:text-xl font-semibold">
+        {filter.title}
+      </p>
 
-            {/* Product Price */}
-            <p className="text-center text-lg font-bold mt-1">{data.price}</p>
+      {/* Product Price */}
+      <h1 className="text-center text-xl sm:text-2xl font-bold">
+        ${filter.price}  {/* Assuming price is a number, you can format it to show as currency */}
+      </h1>
 
-            {/* Add to Cart Button */}
-            <button className="bg-purple-200 text-purple-950 w-full py-2 mt-4 rounded hover:bg-purple-300 transition-all">
-              Add to cart
-            </button>
-          </div>
-        );
-      })}
+      {/* Add to Cart Button */}
+      <Button
+        productId={filter.id}  // Use filter instead of data
+        productName={filter.title}  // Use filter.title for product name
+        productPrice={filter.price}  // Use filter.price for product price
+      />
     </div>
   );
 };

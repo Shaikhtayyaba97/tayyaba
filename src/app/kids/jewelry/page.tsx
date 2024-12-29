@@ -2,6 +2,8 @@ import React from "react";
 import { JewData } from "../../../../Data/data";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
+
 
 const page = () => {
   return (
@@ -13,7 +15,7 @@ const page = () => {
             className="text-amber-700 border border-gray-300 rounded-md p-4 shadow-md max-w-[200px] sm:max-w-[250px] md:max-w-[300px]"
           >
             {/* Product Image */}
-            <Link href={`/kids/jewelry/${data.id}`}>
+            <Link href={`/kis/jewelry/${data.id}`}>
               <Image
                 src={data.img || "./img"}
                 alt="img"
@@ -32,9 +34,11 @@ const page = () => {
             <p className="text-center text-lg font-bold mt-1">{data.price}</p>
 
             {/* Add to Cart Button */}
-            <button className="bg-purple-200 text-purple-950 w-full py-2 mt-4 rounded hover:bg-purple-300 transition-all">
-              Add to cart
-            </button>
+            <Button
+            productId={data.id}
+            productName={data.title}
+            productPrice={data.price}
+            />
           </div>
         );
       })}
