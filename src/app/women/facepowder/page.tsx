@@ -14,7 +14,7 @@ const page = () => {
             className="bg-white text-gray-800 border border-gray-200 rounded-lg p-4 shadow-lg max-w-[300px] hover:shadow-xl transition-shadow duration-300"
           >
             {/* Product Image */}
-            <Link href={`/women/facepowfer/${data.id}`}>
+            <Link href={`/women/facepowder/${data.id}`}>
               <Image
                 src={data.img || "/default-img.png"} // Improved fallback image
                 alt={data.title || "Product Image"} // Meaningful alt text

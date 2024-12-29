@@ -1,6 +1,5 @@
-'use client'
+'use client';
 
-// src/components/contexts/CardContext.tsx
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 
 interface CartItem {
@@ -8,13 +7,15 @@ interface CartItem {
   productName: string;
   productPrice: number;
   quantity: number;
+  productImage?: string; // Optional image property
 }
 
 interface CartContextType {
   cartItems: CartItem[];
-  addToCart: (productId: number, productName: string, productPrice: number) => void;
+  addToCart: (productId: number, productName: string, productPrice: number, productImage?: string) => void;
   updateCart: (productId: number, quantity: number) => void;
   removeFromCart: (productId: number) => void;
+  clearCart: () => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -45,7 +46,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     setCartItems(savedCart);
   }, []);
 
-  const addToCart = (productId: number, productName: string, productPrice: number) => {
+  const addToCart = (productId: number, productName: string, productPrice: number, productImage?: string) => {
     setCartItems((prev) => {
       const existingItem = prev.find((item) => item.productId === productId);
       if (existingItem) {
@@ -55,7 +56,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
             : item
         );
       }
-      const updatedCart = [...prev, { productId, productName, productPrice, quantity: 1 }];
+      const updatedCart = [...prev, { productId, productName, productPrice, quantity: 1, productImage }];
       saveToLocalStorage(updatedCart);
       return updatedCart;
     });
@@ -79,8 +80,13 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     });
   };
 
+  const clearCart = () => {
+    setCartItems([]);
+    saveToLocalStorage([]);
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, updateCart, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, updateCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );

@@ -15,16 +15,23 @@ const CartIcon = () => {
     <div className="relative">
       {/* Cart Icon */}
       <Link href="/cart">
-        
-          <AiOutlineShoppingCart size={30} color='purple' />
-        
+        <div className="flex items-center space-x-2 cursor-pointer p-2 hover:bg-gray-200 rounded-lg transition-all duration-200 ease-in-out">
+          <AiOutlineShoppingCart size={30} color="purple" />
+          
+          {/* Item Count Badge */}
+          {totalItems > 0 && (
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+              {totalItems}
+            </span>
+          )}
+        </div>
       </Link>
 
-      {/* Item Count Badge */}
+      {/* Optionally add a tooltip */}
       {totalItems > 0 && (
-        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-          {totalItems}
-        </span>
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-gray-800 text-white text-xs p-2 rounded-md shadow-lg w-max">
+          You have {totalItems} item{totalItems > 1 ? 's' : ''} in your cart!
+        </div>
       )}
     </div>
   );
