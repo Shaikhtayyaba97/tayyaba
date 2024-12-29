@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FiBarChart2 } from "react-icons/fi";
 import { MdSmartToy } from "react-icons/md";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,9 +31,10 @@ export default function Home() {
             experience elegance, durability, and affordability. All in one
             place.
           </p>
+          <Link href='/women'>
           <Button className="mt-6 bg-purple-700 text-white hover:bg-purple-600">
             View More
-          </Button>
+          </Button></Link>
         </div>
       </div>
 
@@ -40,13 +42,14 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
         {/* Toy Varieties */}
         <div className="flex flex-col items-center">
+          <Link href='/kids'>
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734461230/3_pk1rjr.jpg"
             alt="Toy"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             Toys Varieties <MdSmartToy className="ml-2" />
           </p>
@@ -54,13 +57,14 @@ export default function Home() {
 
         {/* Make-Up Varieties */}
         <div className="flex flex-col items-center">
+          <Link href='/women'>
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734461259/5_ctwv7r.jpg"
             alt="MakeUp"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             MakeUp Varieties <MdSmartToy className="ml-2" />
           </p>
@@ -68,13 +72,14 @@ export default function Home() {
 
         {/* Jewelry */}
         <div className="flex flex-col items-center">
-          <Image
+         
+         <Link href='/ring'> <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586918/WhatsApp_Image_2024-12-19_at_10.41.42_870b9cca_jipabo.jpg"
             alt="Jewelry"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             Jewelry <MdSmartToy className="ml-2" />
           </p>
@@ -82,13 +87,14 @@ export default function Home() {
 
         {/* Body Sprays */}
         <div className="flex flex-col items-center">
+          <Link href='/men'>
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586585/WhatsApp_Image_2024-12-19_at_10.33.34_c1dbe234_dwjl91.jpg"
             alt="Body Spray"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             Body Sprays <MdSmartToy className="ml-2" />
           </p>
@@ -96,13 +102,14 @@ export default function Home() {
 
         {/* Perfumes */}
         <div className="flex flex-col items-center">
+          <Link href='/women'>
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586546/WhatsApp_Image_2024-12-19_at_10.33.34_6da9643c_zcfdou.jpg"
             alt="Perfumes"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             Perfumes <MdSmartToy className="ml-2" />
           </p>
@@ -110,13 +117,14 @@ export default function Home() {
 
         {/* Baby Essentials */}
         <div className="flex flex-col items-center">
+          <Link href='/kids'>
           <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586608/WhatsApp_Image_2024-12-19_at_10.33.33_f52aeb80_u70b2x.jpg"
             alt="Baby Essentials"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
             width={300}
             height={300}
-          />
+          /></Link>
           <p className="mt-4 text-lg font-semibold flex items-center">
             Baby Essentials <MdSmartToy className="ml-2" />
           </p>
