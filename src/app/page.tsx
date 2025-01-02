@@ -73,7 +73,7 @@ export default function Home() {
         {/* Jewelry */}
         <div className="flex flex-col items-center">
          
-         <Link href='/ring'> <Image
+         <Link href='/women/ring'> <Image
             src="https://res.cloudinary.com/dgsdbvs53/image/upload/v1734586918/WhatsApp_Image_2024-12-19_at_10.41.42_870b9cca_jipabo.jpg"
             alt="Jewelry"
             className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
